@@ -49,6 +49,10 @@ h1 {
   
 }
 
+h3 {
+  font-size: medium;
+}
+
 .myBtnContainer{
   padding-top: 40px;
 }
