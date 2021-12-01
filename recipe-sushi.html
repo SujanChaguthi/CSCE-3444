@@ -40,15 +40,15 @@
         <div class="stars">
           <form action="">
             <input class="star star-5" id="star-5" type="radio" name="star"/>
-            <label class="star star-5" for="star-5" >star:</label>
+            <label class="star star-5" for="star-5"></label>
             <input class="star star-4" id="star-4" type="radio" name="star"/>
-            <label class="star star-4" for="star-4" >star:</label>
+            <label class="star star-4" for="star-4" ></label>
             <input class="star star-3" id="star-3" type="radio" name="star"/>
-            <label class="star star-3" for="star-3" >star</label>
+            <label class="star star-3" for="star-3" ></label>
             <input class="star star-2" id="star-2" type="radio" name="star"/>
-            <label class="star star-2" for="star-2" >star</label>
+            <label class="star star-2" for="star-2" ></label>
             <input class="star star-1" id="star-1" type="radio" name="star"/>
-            <label class="star star-1" for="star-1" >star</label>
+            <label class="star star-1" for="star-1" ></label>
           </form>
         </div>
       </div>
@@ -71,7 +71,7 @@
 
       <!-- Code for Print -->
       <div class="col-1">
-    <button  class="print-button" onclick="window.print();return false;" alt=""><span class="print-icon"> star    
+    <button  class="print-button" onclick="window.print();return false;"><span class="print-icon">     
     </span></button>
       </div>
       
@@ -183,13 +183,35 @@
               <label class="col-md-3 control-label" for="message">Your message</label>
               <div class="col-md-9">
                 <textarea class="form-control" id="message" name="message" placeholder="Please enter your feedback here..." rows="5"></textarea>
-                <button type="submit" class="btn btn-primary btn-md">Submit</button>
+                <button class="submit-button state-0"><span class="pre-state-msg">Submit</span><span class="current-state-msg hide">Sending...</span><span class="done-state-msg hide">Done!</span></button>
                 <button type="reset" class="btn btn-default btn-md">Clear</button>
             </div>
       </div>
   </div>
 </div>
 
-   
+<script>
+  const button = document.querySelector(".submit-button"),
+  stateMsg = document.querySelector(".pre-state-msg");
+
+const updateButtonMsg = function () {
+  button.classList.add("state-1", "animated");
+
+  setTimeout(finalButtonMsg, 2000);
+};
+
+const finalButtonMsg = function () {
+  button.classList.add("state-2");
+
+  setTimeout(setInitialButtonState, 2000);
+};
+
+const setInitialButtonState = function () {
+  button.classList.remove("state-1", "state-2", "animated");
+};
+
+button.addEventListener("click", updateButtonMsg);
+
+</script>  
 </body>
 </html>
