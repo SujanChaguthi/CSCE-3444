@@ -8,6 +8,7 @@ body{
   padding: 0;
   font-family: 'Playfair Display', serif;
   font-weight: 600;
+  background-color: #e9ecef;
 }
 /* mathi ko nachalau */
 
@@ -46,7 +47,6 @@ img {
 h1 {
   font-size: 30px;
   word-break: break-all;
-  
 }
 
 h2 {
@@ -97,144 +97,6 @@ h2 {
 }
 
 
-/* View Recipe Button */
-.btn2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 220px;
-  height: 60px;
-  background-color: var(--light-theme);
-  cursor: pointer;
-  font-size: 24px;
-  color: var(--color);
-  transition: all 0.3s;
-  position: relative;
-  text-align: center;
-  overflow: hidden;
-  border-radius: 5px;
-  box-shadow: 0 6px 30px -10px #cccccc;
-}
-
-.btn:hover {
-  transform: translateX(5px) translateY(-7px);
-}
-
-
-.snowflake-grid {
-  display: inline-grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 50px;
-  gap: 5px;
-  width: 100px;
-  transform: scale(0.4);
-}
-.snowflake-grid div {
-  border-radius: 5px;
-}
-.snowflake-grid .snowflake-item {
-  position: relative;
-}
-
-.to-left {
-  position: absolute;
-  top: -4px;
-  left: -35px;
-  animation: swing 3s infinite;
-}
-.to-left div {
-  animation: flash 3s infinite;
-}
-
-.to-right {
-  position: absolute;
-  top: -25px;
-  right: -35px;
-  animation: swing 2.5s infinite;
-}
-.to-right div {
-  animation: flash 2.5s infinite;
-}
-
-.border-left {
-  border-left: 4px solid #e6dada;
-}
-
-.border-right {
-  border-right: 4px solid #e6dada;
-}
-
-.border-bottom {
-  border-bottom: 4px solid #e6dada;
-}
-
-.border-top {
-  border-top: 4px solid #e6dada;
-}
-
-.sub-items {
-  height: 28px;
-  width: 28px;
-}
-
-.m-w-15 {
-  width: 15px;
-}
-
-.m-h-15 {
-  height: 15px;
-}
-
-.r-270 {
-  transform: rotate(270deg);
-}
-
-.r-180 {
-  transform: rotate(180deg);
-}
-
-.r-90 {
-  transform: rotate(90deg);
-}
-
-.pull-down {
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
-}
-
-.pull-down-right {
-  position: absolute;
-  bottom: 5px;
-  left: 5px;
-}
-
-.pull-right {
-  position: absolute;
-  right: 5px;
-  top: 5px;
-}
-
-.pull-left {
-  position: absolute;
-  left: 5px;
-  top: 5px;
-}
-
-.m-3 {
-  margin: 3px;
-}
-
-@keyframes swing {
-  50% {
-    transform: rotateZ(10deg) scale(0.4);
-  }
-}
-@keyframes flash {
-  50% {
-    border-color: #485563;
-  }
-}
 
 
 
@@ -282,12 +144,11 @@ h2 {
 
 
   /* DARK MODE SWITCH */
-
- .btn-sm{
+ /* .btn-sm{
   padding: 10px 10px;
   font-size: 22px;
   border-radius: 2px;
- }
+ } */
   .swtich {
     display: flex;
   }
@@ -349,3 +210,156 @@ h2 {
   }
   
   /* DARK MODE SWITCH END */
+
+  /* View Recipe */  
+  .button {
+    --offset: 10px;
+    --border-size: 2px;
+    display: block;
+    position: relative;
+    padding: 1em 1em;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border: 0;
+    background: transparent;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+    transition: background 0.8s ease;
+    
+  }
+  .button:hover {
+    background: #dbcdb5;
+  }
+  .button__horizontal, .button__vertical {
+    position: absolute;
+    top: var(--horizontal-offset, 0);
+    right: var(--vertical-offset, 0);
+    bottom: var(--horizontal-offset, 0);
+    left: var(--vertical-offset, 0);
+    transition: transform 0.8s ease;
+    will-change: transform;
+  }
+  .button__horizontal::before, .button__vertical::before {
+    content: "";
+    position: absolute;
+    border: inherit;
+  }
+  .button__horizontal {
+    --vertical-offset: calc(var(--offset) * -1);
+    border-top: var(--border-size) solid currentcolor;
+    border-bottom: var(--border-size) solid currentcolor;
+  }
+  .button__horizontal::before {
+    top: calc(var(--vertical-offset) - var(--border-size));
+    bottom: calc(var(--vertical-offset) - var(--border-size));
+    left: calc(var(--vertical-offset) * -1);
+    right: calc(var(--vertical-offset) * -1);
+  }
+  .button:hover .button__horizontal {
+    transform: scaleX(0);
+  }
+  .button__vertical {
+    --horizontal-offset: calc(var(--offset) * -1);
+    border-left: var(--border-size) solid currentcolor;
+    border-right: var(--border-size) solid currentcolor;
+  }
+  .button__vertical::before {
+    top: calc(var(--horizontal-offset) * -1);
+    bottom: calc(var(--horizontal-offset) * -1);
+    left: calc(var(--horizontal-offset) - var(--border-size));
+    right: calc(var(--horizontal-offset) - var(--border-size));
+  }
+  .button:hover .button__vertical {
+    transform: scaleY(0);
+  }
+  /* View Recipe end */
+
+
+  /* Filter Selection */
+  .breadcrumb {
+    display: flex;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    height: 70px;
+    transform: translateY(-50%);
+    z-index: 1;
+    justify-content: center;
+  }
+  
+  .breadcrumb__item {
+    height: 100%;
+    background-color: white;
+    color: #252525;
+    font-family: "Oswald", sans-serif;
+    border-radius: 7px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    transform: skew(-21deg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    margin: 5px;
+    padding: 0 40px;
+    cursor: pointer;
+  }
+  
+  .breadcrumb__item:hover {
+    background: #abac7f;
+    color: #fff;
+  }
+  
+  .breadcrumb__inner {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    z-index: 2;
+    transform: skew(21deg);
+  }
+  
+  .breadcrumb__title {
+    font-size: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  @media all and (max-width: 1000px) {
+    .breadcrumb {
+      height: 35px;
+    }
+  
+    .breadcrumb__title {
+      font-size: 11px;
+    }
+    .breadcrumb__item {
+      padding: 0 30px;
+    }
+  }
+  
+  @media all and (max-width: 710px) {
+    .breadcrumb {
+      height: 30px;
+    }
+    .breadcrumb__item {
+      padding: 0 20px;
+    }
+  }
+  
+  li {
+    list-style: none;
+  }
+  /* Filter Selection end*/
