@@ -33,7 +33,6 @@
   <!--Headerbar end -->
 
   <!-- Dark Mode Switch -->
-  
   <div class="btn-sm">
     <div class="float-right">
       <h5 style="width: 101px; height: 2px; margin-left:50px;">Dark Mode</h5>
@@ -45,250 +44,95 @@
   </div>
 <!-- Dark Mode Switch end -->
 
-<!--Code for Sort List-->
+
 <div class="myBtnContainer">
-  <center>
-  <button id="all-menu" class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button id="breakfast-menu" class="btn" onclick="filterSelection('breakfast')"> Breakfast</button>
-  <button id="dinner-menu" class="btn" onclick="filterSelection('dinner')"> Dinner</button>
-  <button id="lunch-menu" class="btn" onclick="filterSelection('lunch')"> Lunch</button>
-  </center>
+<!--Code for Sort List-->
+<div class="container">
+  <ul class="breadcrumb">
+    <li class="breadcrumb__item breadcrumb__item-firstChild">
+      <span class="breadcrumb__inner">
+        <span class="breadcrumb__title"  onclick="filterSelection('all')">Show All</span>
+      </span>
+    </li>
+    <li class="breadcrumb__item">
+      <span class="breadcrumb__inner">
+        <span class="breadcrumb__title" onclick="filterSelection('breakfast')">Breakfast</span>
+      </span>
+    </li>
+    <li class="breadcrumb__item">
+      <span class="breadcrumb__inner">
+        <span class="breadcrumb__title" onclick="filterSelection('lunch')">Lunch</span>
+      </span>
+    </li>
+    <li class="breadcrumb__item breadcrumb__item-lastChild">
+      <span class="breadcrumb__inner">
+        <span class="breadcrumb__title" onclick="filterSelection('dinner')">Dinner</span>
+      </span>
+    </li>
+  </ul>
+</div>
 <!--Code for Sort List end-->
+
 
 <!--Container for items-->
 <div class="container">
   <div class="filterDiv breakfast">
-        <div class="content">
-            <img src="Images/breakfast2.jpg" alt="Lights"></img>
-            <h1>Bacon & Fresh fruit </h1>
-            <h2>Lorem ipsum dolor..</h2>
-
-            <!-- For View Recipe Button -->
-            <div class="container2">
-              <div class="btn2">
-                <div class="shop-now"><a href="">View Recipe</a></div>
-                <div class="snowflake-grid to-left">
-                  <div class="snowflake-item border-bottom border-right">
-                    <div class="sub-items border-right border-bottom pull-down">
-                      <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                    </div>
-                  </div>
-                  <div class="snowflake-item border-bottom border-left">
-                    <div class="sub-items border-right border-bottom r-90 pull-down-right">
-                      <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                    </div>
-                  </div>
-                  <div class="snowflake-item border-top border-right">
-                    <div class="sub-items border-right border-bottom r-270 pull-right">
-                      <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                    </div>
-                  </div>
-                  <div class="snowflake-item border-top border-left">
-                    <div class="sub-items border-right border-bottom r-180 pull-left">
-                      <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="snowflake-grid to-right">
-                  <div class="snowflake-item border-bottom border-right">
-                    <div class="sub-items border-right border-bottom pull-down">
-                      <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                    </div>
-                  </div>
-                  <div class="snowflake-item border-bottom border-left">
-                    <div class="sub-items border-right border-bottom r-90 pull-down-right">
-                      <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                    </div>
-                  </div>
-                  <div class="snowflake-item border-top border-right">
-                    <div class="sub-items border-right border-bottom r-270 pull-right">
-                      <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                    </div>
-                  </div>
-                  <div class="snowflake-item border-top border-left">
-                    <div class="sub-items border-right border-bottom r-180 pull-left">
-                      <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="filterDiv lunch">
-      <div class="content">
-          <img src="Images/Dragon_Rolls (1).jpg" alt="Su" ></img>
-          <h1>Sushi Rolls</h1>
-          <h2>Lorem ipsum dolor..</h2>
-
-           <!-- For View Recipe Button -->
-           <div class="container2">
-            <div class="btn2">
-              <div class="shop-now"><a href="./recipe-sushi.html">View Recipe</a></div>
-              <div class="snowflake-grid to-left">
-                <div class="snowflake-item border-bottom border-right">
-                  <div class="sub-items border-right border-bottom pull-down">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-bottom border-left">
-                  <div class="sub-items border-right border-bottom r-90 pull-down-right">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-top border-right">
-                  <div class="sub-items border-right border-bottom r-270 pull-right">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-top border-left">
-                  <div class="sub-items border-right border-bottom r-180 pull-left">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="snowflake-grid to-right">
-                <div class="snowflake-item border-bottom border-right">
-                  <div class="sub-items border-right border-bottom pull-down">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-bottom border-left">
-                  <div class="sub-items border-right border-bottom r-90 pull-down-right">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-top border-right">
-                  <div class="sub-items border-right border-bottom r-270 pull-right">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-top border-left">
-                  <div class="sub-items border-right border-bottom r-180 pull-left">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div class="content">
+      <img src="Images/breakfast2.jpg" alt="Lights"></img>
+      <h1>Bacon & Fresh fruit </h1>
+      <h2>Lorem ipsum dolor..</h2>
+      <!-- For View Recipe Button -->
+      <div class="container2">
+        <button class="button" href=""> View Recipe
+        <div class="button__horizontal"></div>
+        <div class="button__vertical"></div>
+        </button>
       </div>
     </div>
+  </div>
 
-    <div class="filterDiv breakfast">
-        <div class="content">
-            <img src="https://tinyurl.com/yg7zb976" alt="Ot"></img>
-            <h1>Oat Meal</h1>
+  <div class="filterDiv lunch">
+    <div class="content">
+      <img src="Images/Dragon_Rolls (1).jpg" alt="Su" ></img>
+      <h1>Sushi Rolls</h1>
+      <h2>Lorem ipsum dolor..</h2>
+      <!-- For View Recipe Button -->
+      <div class="container2">
+        <button class="button"> <a href="./recipe-sushi.html"> View Recipe </a>
+        <div class="button__horizontal"></div>
+        <div class="button__vertical"></div>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="filterDiv breakfast">
+    <div class="content">
+        <img src="https://tinyurl.com/yg7zb976" alt="Ot"></img>
+        <h1>Oat Meal</h1>
         <h2>Lorem ipsum dolor..</h2>
-
-         <!-- For View Recipe Button -->
-         <div class="container2">
-          <div class="btn2">
-            <div class="shop-now"><a href="">View Recipe</a></div>
-            <div class="snowflake-grid to-left">
-              <div class="snowflake-item border-bottom border-right">
-                <div class="sub-items border-right border-bottom pull-down">
-                  <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                </div>
-              </div>
-              <div class="snowflake-item border-bottom border-left">
-                <div class="sub-items border-right border-bottom r-90 pull-down-right">
-                  <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                </div>
-              </div>
-              <div class="snowflake-item border-top border-right">
-                <div class="sub-items border-right border-bottom r-270 pull-right">
-                  <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                </div>
-              </div>
-              <div class="snowflake-item border-top border-left">
-                <div class="sub-items border-right border-bottom r-180 pull-left">
-                  <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                </div>
-              </div>
-            </div>
-            <div class="snowflake-grid to-right">
-              <div class="snowflake-item border-bottom border-right">
-                <div class="sub-items border-right border-bottom pull-down">
-                  <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                </div>
-              </div>
-              <div class="snowflake-item border-bottom border-left">
-                <div class="sub-items border-right border-bottom r-90 pull-down-right">
-                  <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                </div>
-              </div>
-              <div class="snowflake-item border-top border-right">
-                <div class="sub-items border-right border-bottom r-270 pull-right">
-                  <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                </div>
-              </div>
-              <div class="snowflake-item border-top border-left">
-                <div class="sub-items border-right border-bottom r-180 pull-left">
-                  <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <!-- For View Recipe Button -->
+        <div class="container2">
+          <button class="button" href="./recipe-sushi.html"> View Recipe
+          <div class="button__horizontal"></div>
+          <div class="button__vertical"></div>
+          </button>
         </div>
-        </div>
-</div>
+    </div>
+  </div>
 
-<div class="filterDiv lunch">
-      <div class="content">
+  <div class="filterDiv lunch">
+    <div class="content">
           <img src="https://tinyurl.com/yeo9y3px" alt="Burto" ></img>
           <h1>Burrito Queen</h1>
           <h2>Lorem ipsum dolor..</h2>
 
            <!-- For View Recipe Button -->
-           <div class="container2">
-            <div class="btn2">
-              <div class="shop-now"><a href="">View Recipe</a></div>
-              <div class="snowflake-grid to-left">
-                <div class="snowflake-item border-bottom border-right">
-                  <div class="sub-items border-right border-bottom pull-down">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-bottom border-left">
-                  <div class="sub-items border-right border-bottom r-90 pull-down-right">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-top border-right">
-                  <div class="sub-items border-right border-bottom r-270 pull-right">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-top border-left">
-                  <div class="sub-items border-right border-bottom r-180 pull-left">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="snowflake-grid to-right">
-                <div class="snowflake-item border-bottom border-right">
-                  <div class="sub-items border-right border-bottom pull-down">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-bottom border-left">
-                  <div class="sub-items border-right border-bottom r-90 pull-down-right">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-top border-right">
-                  <div class="sub-items border-right border-bottom r-270 pull-right">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-top border-left">
-                  <div class="sub-items border-right border-bottom r-180 pull-left">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="container2">
+            <button class="button" href="./recipe-sushi.html"> View Recipe
+            <div class="button__horizontal"></div>
+            <div class="button__vertical"></div>
+            </button>
           </div>
       </div>
     </div>
@@ -300,54 +144,11 @@
           <h2>Lorem ipsum dolor..</h2>
 
            <!-- For View Recipe Button -->
-           <div class="container2">
-            <div class="btn2">
-              <div class="shop-now"><a href="">View Recipe</a></div>
-              <div class="snowflake-grid to-left">
-                <div class="snowflake-item border-bottom border-right">
-                  <div class="sub-items border-right border-bottom pull-down">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-bottom border-left">
-                  <div class="sub-items border-right border-bottom r-90 pull-down-right">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-top border-right">
-                  <div class="sub-items border-right border-bottom r-270 pull-right">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-top border-left">
-                  <div class="sub-items border-right border-bottom r-180 pull-left">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="snowflake-grid to-right">
-                <div class="snowflake-item border-bottom border-right">
-                  <div class="sub-items border-right border-bottom pull-down">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-bottom border-left">
-                  <div class="sub-items border-right border-bottom r-90 pull-down-right">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-top border-right">
-                  <div class="sub-items border-right border-bottom r-270 pull-right">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-top border-left">
-                  <div class="sub-items border-right border-bottom r-180 pull-left">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="container2">
+            <button class="button" href="./recipe-sushi.html"> View Recipe
+            <div class="button__horizontal"></div>
+            <div class="button__vertical"></div>
+            </button>
           </div>
       </div>
   </div>
@@ -360,53 +161,10 @@
 
            <!-- For View Recipe Button -->
            <div class="container2">
-            <div class="btn2">
-              <div class="shop-now"><a href="">View Recipe</a></div>
-              <div class="snowflake-grid to-left">
-                <div class="snowflake-item border-bottom border-right">
-                  <div class="sub-items border-right border-bottom pull-down">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-bottom border-left">
-                  <div class="sub-items border-right border-bottom r-90 pull-down-right">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-top border-right">
-                  <div class="sub-items border-right border-bottom r-270 pull-right">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-top border-left">
-                  <div class="sub-items border-right border-bottom r-180 pull-left">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="snowflake-grid to-right">
-                <div class="snowflake-item border-bottom border-right">
-                  <div class="sub-items border-right border-bottom pull-down">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-bottom border-left">
-                  <div class="sub-items border-right border-bottom r-90 pull-down-right">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-top border-right">
-                  <div class="sub-items border-right border-bottom r-270 pull-right">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-top border-left">
-                  <div class="sub-items border-right border-bottom r-180 pull-left">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <button class="button" href="./recipe-sushi.html"> View Recipe
+            <div class="button__horizontal"></div>
+            <div class="button__vertical"></div>
+            </button>
           </div>
       </div>
     </div>
@@ -419,53 +177,10 @@
 
            <!-- For View Recipe Button -->
            <div class="container2">
-            <div class="btn2">
-              <div class="shop-now"><a href="">View Recipe</a></div>
-              <div class="snowflake-grid to-left">
-                <div class="snowflake-item border-bottom border-right">
-                  <div class="sub-items border-right border-bottom pull-down">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-bottom border-left">
-                  <div class="sub-items border-right border-bottom r-90 pull-down-right">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-top border-right">
-                  <div class="sub-items border-right border-bottom r-270 pull-right">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-top border-left">
-                  <div class="sub-items border-right border-bottom r-180 pull-left">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="snowflake-grid to-right">
-                <div class="snowflake-item border-bottom border-right">
-                  <div class="sub-items border-right border-bottom pull-down">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-bottom border-left">
-                  <div class="sub-items border-right border-bottom r-90 pull-down-right">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-top border-right">
-                  <div class="sub-items border-right border-bottom r-270 pull-right">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-top border-left">
-                  <div class="sub-items border-right border-bottom r-180 pull-left">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <button class="button" href="./recipe-sushi.html"> View Recipe
+            <div class="button__horizontal"></div>
+            <div class="button__vertical"></div>
+            </button>
           </div>
       </div>
     </div>
@@ -478,53 +193,10 @@
 
            <!-- For View Recipe Button -->
            <div class="container2">
-            <div class="btn2">
-              <div class="shop-now"><a href="">View Recipe</a></div>
-              <div class="snowflake-grid to-left">
-                <div class="snowflake-item border-bottom border-right">
-                  <div class="sub-items border-right border-bottom pull-down">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-bottom border-left">
-                  <div class="sub-items border-right border-bottom r-90 pull-down-right">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-top border-right">
-                  <div class="sub-items border-right border-bottom r-270 pull-right">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-top border-left">
-                  <div class="sub-items border-right border-bottom r-180 pull-left">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="snowflake-grid to-right">
-                <div class="snowflake-item border-bottom border-right">
-                  <div class="sub-items border-right border-bottom pull-down">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-bottom border-left">
-                  <div class="sub-items border-right border-bottom r-90 pull-down-right">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-top border-right">
-                  <div class="sub-items border-right border-bottom r-270 pull-right">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-top border-left">
-                  <div class="sub-items border-right border-bottom r-180 pull-left">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <button class="button" href="./recipe-sushi.html"> View Recipe
+            <div class="button__horizontal"></div>
+            <div class="button__vertical"></div>
+            </button>
           </div>
       </div>
     </div>
@@ -537,53 +209,10 @@
 
            <!-- For View Recipe Button -->
            <div class="container2">
-            <div class="btn2">
-              <div class="shop-now"><a href="">View Recipe</a></div>
-              <div class="snowflake-grid to-left">
-                <div class="snowflake-item border-bottom border-right">
-                  <div class="sub-items border-right border-bottom pull-down">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-bottom border-left">
-                  <div class="sub-items border-right border-bottom r-90 pull-down-right">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-top border-right">
-                  <div class="sub-items border-right border-bottom r-270 pull-right">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-top border-left">
-                  <div class="sub-items border-right border-bottom r-180 pull-left">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="snowflake-grid to-right">
-                <div class="snowflake-item border-bottom border-right">
-                  <div class="sub-items border-right border-bottom pull-down">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-bottom border-left">
-                  <div class="sub-items border-right border-bottom r-90 pull-down-right">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-top border-right">
-                  <div class="sub-items border-right border-bottom r-270 pull-right">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-                <div class="snowflake-item border-top border-left">
-                  <div class="sub-items border-right border-bottom r-180 pull-left">
-                    <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <button class="button" href="./recipe-sushi.html"> View Recipe
+            <div class="button__horizontal"></div>
+            <div class="button__vertical"></div>
+            </button>
           </div>
       </div>
     </div>
