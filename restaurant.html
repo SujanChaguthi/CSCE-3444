@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <title>Recipes|FoodHub</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="restaurant.css">
-<!--   <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="RecipesPage.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
@@ -14,23 +14,35 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 
 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:700" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" crossorigin="anonymous">
+  
 </head>
 
 <body>
+
   <!--Heardebar start -->
   <div class="topnav">
     <a class="active" href="./home.html">Home</a>
-    <a href="./restaurant.html">Recipes</a>
+    <a href="./RecipesPage.html">Recipes</a>
     <a href="./businessRegistration.html">Register Business</a>
-    <a href="home.html#aboutUs">About Us</a>
+    <a href="./aboutUs">About Us</a>
     <a href="../recipe.html">LogIn</a>
   </div>
   <!--Headerbar end -->
 
+  <!-- Dark Mode Switch -->
+  <div class="btn-sm">
+    <div class="float-right">
+      <span class="swtich switcher switcher-1">
+        <input type="checkbox" onclick="myFunction()" id="switcher-1">
+        <label for="switcher-1"></label>
+      </span>
+    </div>
+  </div>
+<!-- Dark Mode Switch end -->
 
-<!--Start: -->
-
-<!--This is code for Sort List-->
+<!--Code for Sort List-->
 <div class="myBtnContainer">
   <center>
   <button id="all-menu" class="btn active" onclick="filterSelection('all')"> Show all</button>
@@ -38,7 +50,9 @@
   <button id="dinner-menu" class="btn" onclick="filterSelection('dinner')"> Dinner</button>
   <button id="lunch-menu" class="btn" onclick="filterSelection('lunch')"> Lunch</button>
   </center>
-  <!--Container for items-->
+<!--Code for Sort List end-->
+
+<!--Container for items-->
 <div class="container">
   <div class="filterDiv breakfast">
         <div class="content">
@@ -49,7 +63,7 @@
             <!-- For View Recipe Button -->
             <div class="container2">
               <div class="btn2">
-                <div class="shop-now"><a href="./recipe.html">View Recipe</a></div>
+                <div class="shop-now"><a href="./recipe-sushi.html">View Recipe</a></div>
                 <div class="snowflake-grid to-left">
                   <div class="snowflake-item border-bottom border-right">
                     <div class="sub-items border-right border-bottom pull-down">
@@ -101,7 +115,7 @@
 
     <div class="filterDiv lunch">
       <div class="content">
-          <img src="https://tinyurl.com/ygx3holp" alt="Sushi" ></img>
+          <img src="Images/Dragon_Rolls (1).jpg" alt="Sushi" ></img>
           <h5>Sushi</h5>
           <p>Lorem ipsum dolor..</p>
 
@@ -571,7 +585,17 @@
       </div>
     </div>
 </div>
+
+
+<!-- JAVASCRIPT -->
 <script>
+
+//Dark Mode java
+function myFunction() {
+var element = document.body;
+element.classList.toggle("dark-mode");
+}
+
 filterSelection("all")
 function filterSelection(c) {
   var x, i;
@@ -607,8 +631,8 @@ function RemoveClass(element, name) {
   }
   element.className = arr1.join(" ");
 }
-
 </script>
+<!-- JAVASCRIPT end -->
 
 </body>
 </html>
