@@ -57,6 +57,12 @@ h2 {
   padding-top: 40px;
 }
 
+h6{
+  font-size: small;
+  width: 100px; 
+  height: 2px;
+}
+
 
 /* Style the buttons */
 .btn {
@@ -144,28 +150,27 @@ h2 {
 
 
   /* DARK MODE SWITCH */
- /* .btn-sm{
-  padding: 10px 10px;
-  font-size: 22px;
-  border-radius: 2px;
- } */
+
+ 
   .swtich {
     display: flex;
+    
   }
   body span.switcher {
     position: relative;
-    width: 200px;
-    height: 50px;
+    width: 100px;
+    height: 40px;
     border-radius: 25px;
-    margin: 20px 0;
+    padding-top: 6px;
+    margin: 10px 0;
   }
   body span.switcher input {
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
     position: relative;
-    width: 200px;
-    height: 50px;
+    width: 150px;
+    height: 30px;
     border-radius: 25px;
     background-color: #1E1E1E;
     outline: none;
@@ -176,7 +181,7 @@ h2 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    color: #FFFFFF;
+    color: #939393;
   }
   body span.switcher input:before {
     content: "ON";
@@ -198,12 +203,12 @@ h2 {
   }
   body span.switcher.switcher-1 input:checked + label {
     left: 10px;
-    right: 100px;
+    right: 50px;
     background: #1E1E1E;
     transition: left 0.5s, right 0.4s 0.2s;
   }
   body span.switcher.switcher-1 input:not(:checked) + label {
-    left: 100px;
+    left: 50px;
     right: 10px;
     background: #FFFFFF;
     transition: left 0.4s 0.2s, right 0.5s, background 0.35s -0.1s;
@@ -299,7 +304,7 @@ h2 {
   
   .breadcrumb__item {
     height: 100%;
-    /* background-color: white; */
+    background-color: white;
     color: #252525;
     font-family: "Oswald", sans-serif;
     border-radius: 7px;
