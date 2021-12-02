@@ -294,6 +294,7 @@ h2 {
     transform: translateY(-50%);
     z-index: 1;
     justify-content: center;
+    background-color: transparent;
   }
   
   .breadcrumb__item {
