@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Recipes|FoodHub</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <link rel="stylesheet" href="RecipesPage.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,21 +17,22 @@
 
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:700" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" crossorigin="anonymous">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    crossorigin="anonymous">
+
 </head>
 
 <body>
   <!--Heardebar start -->
   <header>
-  <div class="topnav">
-    <a href="./index.html">Home</a>
-    <a href="./RecipesPage.html" class="active" >Recipes</a>
-    <a href="./businessRegistration.html">Register Business</a>
-    <a href="./aboutus.html">About Us</a>
-    <a href="./login.html">LogIn</a>
-  </div>
-</header>
+    <div class="topnav">
+      <a href="./index.html">Home</a>
+      <a href="./RecipesPage.html" class="active">Recipes</a>
+      <a href="./businessRegistration.html">Register Business</a>
+      <a href="./aboutus.html">About Us</a>
+      <a href="./login.html">LogIn</a>
+    </div>
+  </header>
   <!--Headerbar end -->
 
   <!-- Dark Mode Switch -->
@@ -37,234 +40,235 @@
     <div class="float-right">
       <h5 style="width: 101px; height: 2px; margin-left:50px;">Dark Mode</h5>
       <span class="swtich switcher switcher-1">
-      <input type="checkbox" onclick="myFunction()" id="switcher-1">
-      <label for="switcher-1"></label>
-    </span>
+        <input type="checkbox" onclick="myFunction()" id="switcher-1">
+        <label for="switcher-1"></label>
+      </span>
     </div>
   </div>
-<!-- Dark Mode Switch end -->
+  <!-- Dark Mode Switch end -->
 
 
-<div class="myBtnContainer">
-<!--Code for Sort List-->
-<div class="container">
-  <ul class="breadcrumb">
-    <li class="breadcrumb__item breadcrumb__item-firstChild">
-      <span class="breadcrumb__inner">
-        <span class="breadcrumb__title"  onclick="filterSelection('all')">Show All</span>
-      </span>
-    </li>
-    <li class="breadcrumb__item">
-      <span class="breadcrumb__inner">
-        <span class="breadcrumb__title" onclick="filterSelection('breakfast')">Breakfast</span>
-      </span>
-    </li>
-    <li class="breadcrumb__item">
-      <span class="breadcrumb__inner">
-        <span class="breadcrumb__title" onclick="filterSelection('lunch')">Lunch</span>
-      </span>
-    </li>
-    <li class="breadcrumb__item breadcrumb__item-lastChild">
-      <span class="breadcrumb__inner">
-        <span class="breadcrumb__title" onclick="filterSelection('dinner')">Dinner</span>
-      </span>
-    </li>
-  </ul>
-</div>
-<!--Code for Sort List end-->
-
-
-<!--Container for items-->
-<div class="container">
-  <div class="filterDiv breakfast">
-    <div class="content">
-      <img src="Images/breakfast2.jpg" alt="Lights"></img>
-      <h1>Bacon & Fresh fruit </h1>
-      <h2>Lorem ipsum dolor..</h2>
-      <!-- For View Recipe Button -->
-      <div class="container2">
-        <button class="button" href=""> View Recipe
-        <div class="button__horizontal"></div>
-        <div class="button__vertical"></div>
-        </button>
-      </div>
+  <div class="myBtnContainer">
+    <!--Code for Sort List-->
+    <div class="container">
+      <ul class="breadcrumb">
+        <li class="breadcrumb__item breadcrumb__item-firstChild">
+          <span class="breadcrumb__inner">
+            <span class="breadcrumb__title" onclick="filterSelection('all')">Show All</span>
+          </span>
+        </li>
+        <li class="breadcrumb__item">
+          <span class="breadcrumb__inner">
+            <span class="breadcrumb__title" onclick="filterSelection('breakfast')">Breakfast</span>
+          </span>
+        </li>
+        <li class="breadcrumb__item">
+          <span class="breadcrumb__inner">
+            <span class="breadcrumb__title" onclick="filterSelection('lunch')">Lunch</span>
+          </span>
+        </li>
+        <li class="breadcrumb__item breadcrumb__item-lastChild">
+          <span class="breadcrumb__inner">
+            <span class="breadcrumb__title" onclick="filterSelection('dinner')">Dinner</span>
+          </span>
+        </li>
+      </ul>
     </div>
-  </div>
+    <!--Code for Sort List end-->
 
-  <div class="filterDiv lunch">
-    <div class="content">
-      <img src="Images/Dragon_Rolls (1).jpg" alt="Su" ></img>
-      <h1>Sushi Rolls</h1>
-      <h2>Lorem ipsum dolor..</h2>
-      <!-- For View Recipe Button -->
-      <div class="container2">
-        <button class="button"> <a href="./recipe-sushi.html"> View Recipe </a>
-        <div class="button__horizontal"></div>
-        <div class="button__vertical"></div>
-        </button>
-      </div>
-    </div>
-  </div>
 
-  <div class="filterDiv breakfast">
-    <div class="content">
-        <img src="https://tinyurl.com/yg7zb976" alt="Ot"></img>
-        <h1>Oat Meal</h1>
-        <h2>Lorem ipsum dolor..</h2>
-        <!-- For View Recipe Button -->
-        <div class="container2">
-          <button class="button" href="./recipe-sushi.html"> View Recipe
-          <div class="button__horizontal"></div>
-          <div class="button__vertical"></div>
-          </button>
+    <!--Container for items-->
+    <div class="container">
+      <div class="filterDiv breakfast">
+        <div class="content">
+          <img src="Images/breakfast2.jpg" alt="Lights"></img>
+          <h1>Bacon & Fresh fruit </h1>
+          <h2>Lorem ipsum dolor..</h2>
+          <!-- For View Recipe Button -->
+          <div class="container2">
+            <button class="button" href=""> View Recipe
+              <div class="button__horizontal"></div>
+              <div class="button__vertical"></div>
+            </button>
+          </div>
         </div>
-    </div>
-  </div>
+      </div>
 
-  <div class="filterDiv lunch">
-    <div class="content">
-          <img src="https://tinyurl.com/yeo9y3px" alt="Burto" ></img>
+      <div class="filterDiv lunch">
+        <div class="content">
+          <img src="Images/Dragon_Rolls (1).jpg" alt="Su"></img>
+          <h1>Sushi Rolls</h1>
+          <h2>Lorem ipsum dolor..</h2>
+          <!-- For View Recipe Button -->
+          <div class="container2">
+            <button class="button"> <a href="./recipe-sushi.html"> View Recipe </a>
+              <div class="button__horizontal"></div>
+              <div class="button__vertical"></div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="filterDiv breakfast">
+        <div class="content">
+          <img src="https://tinyurl.com/yg7zb976" alt="Ot"></img>
+          <h1>Oat Meal</h1>
+          <h2>Lorem ipsum dolor..</h2>
+          <!-- For View Recipe Button -->
+          <div class="container2">
+            <button class="button" href="./recipe-sushi.html"> View Recipe
+              <div class="button__horizontal"></div>
+              <div class="button__vertical"></div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="filterDiv lunch">
+        <div class="content">
+          <img src="https://tinyurl.com/yeo9y3px" alt="Burto"></img>
           <h1>Burrito Queen</h1>
           <h2>Lorem ipsum dolor..</h2>
 
-           <!-- For View Recipe Button -->
+          <!-- For View Recipe Button -->
           <div class="container2">
             <button class="button" href="./recipe-sushi.html"> View Recipe
-            <div class="button__horizontal"></div>
-            <div class="button__vertical"></div>
+              <div class="button__horizontal"></div>
+              <div class="button__vertical"></div>
             </button>
           </div>
+        </div>
       </div>
-    </div>
 
-    <div class="filterDiv breakfast">
-      <div class="content">
-          <img src="Images/breakfast.jpg" alt="Egg On" ></img>
+      <div class="filterDiv breakfast">
+        <div class="content">
+          <img src="Images/breakfast.jpg" alt="Egg On"></img>
           <h1>Egg & Bacon</h1>
           <h2>Lorem ipsum dolor..</h2>
 
-           <!-- For View Recipe Button -->
+          <!-- For View Recipe Button -->
           <div class="container2">
             <button class="button" href="./recipe-sushi.html"> View Recipe
-            <div class="button__horizontal"></div>
-            <div class="button__vertical"></div>
+              <div class="button__horizontal"></div>
+              <div class="button__vertical"></div>
             </button>
           </div>
+        </div>
       </div>
-  </div>
 
-    <div class="filterDiv lunch">
-      <div class="content">
-          <img src="https://tinyurl.com/ygll6n7c" alt="Pizza" ></img>
+      <div class="filterDiv lunch">
+        <div class="content">
+          <img src="https://tinyurl.com/ygll6n7c" alt="Pizza"></img>
           <h1>Thin Crust Pizza</h1>
           <h2>Lorem ipsum dolor..</h2>
 
-           <!-- For View Recipe Button -->
-           <div class="container2">
+          <!-- For View Recipe Button -->
+          <div class="container2">
             <button class="button" href="./recipe-sushi.html"> View Recipe
-            <div class="button__horizontal"></div>
-            <div class="button__vertical"></div>
+              <div class="button__horizontal"></div>
+              <div class="button__vertical"></div>
             </button>
           </div>
+        </div>
       </div>
-    </div>
 
-    <div class="filterDiv dinner">
-      <div class="content">
-          <img src="https://tinyurl.com/yfbl2o9o" alt="Chen" ></img>
+      <div class="filterDiv dinner">
+        <div class="content">
+          <img src="https://tinyurl.com/yfbl2o9o" alt="Chen"></img>
           <h1>Chicken & Rice</h1>
           <h2>Lorem ipsum dolor..</h2>
 
-           <!-- For View Recipe Button -->
-           <div class="container2">
+          <!-- For View Recipe Button -->
+          <div class="container2">
             <button class="button" href="./recipe-sushi.html"> View Recipe
-            <div class="button__horizontal"></div>
-            <div class="button__vertical"></div>
+              <div class="button__horizontal"></div>
+              <div class="button__vertical"></div>
             </button>
           </div>
+        </div>
       </div>
-    </div>
 
-    <div class="filterDiv dinner">
-      <div class="content">
+      <div class="filterDiv dinner">
+        <div class="content">
           <img src="https://tinyurl.com/yhtsvu3x" alt="Pok"></img>
           <h1>Pork Roast </h1>
           <h2>Lorem ipsum dolor..</h2>
 
-           <!-- For View Recipe Button -->
-           <div class="container2">
+          <!-- For View Recipe Button -->
+          <div class="container2">
             <button class="button" href="./recipe-sushi.html"> View Recipe
-            <div class="button__horizontal"></div>
-            <div class="button__vertical"></div>
+              <div class="button__horizontal"></div>
+              <div class="button__vertical"></div>
             </button>
           </div>
+        </div>
       </div>
-    </div>
 
-    <div class="filterDiv dinner">
-      <div class="content">
+      <div class="filterDiv dinner">
+        <div class="content">
           <img src="https://tinyurl.com/ygeqo8tl" alt="taco"></img>
           <h1>Busy Weeknights</h1>
           <h2>Lorem ipsum dolor..</h2>
 
-           <!-- For View Recipe Button -->
-           <div class="container2">
+          <!-- For View Recipe Button -->
+          <div class="container2">
             <button class="button" href="./recipe-sushi.html"> View Recipe
-            <div class="button__horizontal"></div>
-            <div class="button__vertical"></div>
+              <div class="button__horizontal"></div>
+              <div class="button__vertical"></div>
             </button>
           </div>
+        </div>
       </div>
     </div>
-</div>
 
 
-<!-- JAVASCRIPT -->
-<script>
+    <!-- JAVASCRIPT -->
+    <script>
 
-//Dark Mode java
-function myFunction() {
-var element = document.body;
-element.classList.toggle("dark-mode");
-}
+      //Dark Mode java
+      function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
 
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
-  }
-}
+      filterSelection("all")
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+        }
+      }
 
-function clearSelection(){
-  var x = document.getElementById("all-menu");
-}
+      function clearSelection() {
+        var x = document.getElementById("all-menu");
+      }
 
-function AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
+      function AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+        }
+      }
 
-function RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-  }
-  element.className = arr1.join(" ");
-}
-</script>
-<!-- JAVASCRIPT end -->
+      function RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+    </script>
+    <!-- JAVASCRIPT end -->
 
 </body>
+
 </html>
