@@ -582,12 +582,12 @@ textarea {
 }
 .form label {
   margin-left: 10px;
-  color: #999999;
+  color: #abac7f;
 }
 .submit input { 
   width: 100px; 
   height: 40px; ;
-  background-color: #474E69; 
+  background-color: #abac7f; 
   color: #FFF; 
   border-radius: 3px; 
   -moz-border-radius: 3px; 
